@@ -28,7 +28,14 @@ int main() {
     bool money = true;
     bool car = false;
 
-    std::cout << student;
+    // std::cout << student;
+
+    std::string name = "Ozan";
+    std::string day = "Friday";
+    std::string foot = "Pizza";
+    std::string address = "123 Fake St.";
+
+    std::cout << "You are " << age << " Years old!";
 
     return 0;
 }
