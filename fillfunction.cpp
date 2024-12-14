@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 int main() {
 
@@ -13,15 +14,29 @@ int main() {
     //     std::cout << car << '\n';
     // }
 
-    std::string planes[113];
+    // std::string planes[113];
 
-    fill(planes, planes + 12, "Boeing");
-    fill(planes + 12, planes + 48, "Airbus");
-    fill(planes + 48, planes + 79, "Bombardier");
-    fill(planes + 79, planes + 113, "Lockheed - Martin");
+    // fill(planes, planes + 12, "Boeing");
+    // fill(planes + 12, planes + 48, "Airbus");
+    // fill(planes + 48, planes + 79, "Bombardier");
+    // fill(planes + 79, planes + 113, "Lockheed - Martin");
 
-    for(std::string plane : planes){
-        std::cout << plane << '\n';
+    // for(std::string plane : planes){
+    //     std::cout << plane << '\n';
+    // }
+
+    const int bookSize = 75;
+    std::string books[bookSize];
+
+    fill(books , books + (bookSize / 5), "Elven Blood");
+    fill(books + (bookSize / 5), books + (bookSize / 5) + 13, "Faiths Sword");
+    fill(books + (bookSize / 5) + 13, books + (bookSize / 3) + 11, "Guitars");
+    fill(books + (bookSize / 3) + 11, books + bookSize, "Redemption");
+
+
+    for(std::string asd : books)
+    {
+        std::cout << asd << '\n';
     }
 
     return 0;
